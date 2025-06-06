@@ -1,0 +1,246 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+      <link rel="stylesheet" href="../css/style.css"/>
+      <link rel="stylesheet" href="../css/foot.css"/>
+      <link rel="stylesheet" href="../css/sli.css"/>
+      <title>Sobre Nós</title>
+      <style>
+        body {
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #fff;
+        }
+
+        /* Efeito na seção HERO */
+.hero {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeSlideHero 1s ease forwards;
+}
+
+@keyframes fadeSlideHero {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito na seção de conteúdo */
+.content {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeSlideContent 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeSlideContent {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    
+        .hero {
+          background: url('fotoequipe.png') no-repeat center center/cover;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-align: center;
+          padding: 2rem;
+        }
+    
+        .hero h1 {
+          font-size: 3.5rem;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 1rem 2rem;
+          border-radius: 10px;
+        }
+    
+        .content {
+          padding: 4rem 2rem;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+    
+        .section {
+          margin-bottom: 3rem;
+        }
+    
+        .section h2 {
+          color: #0c1d59;
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+    
+        .section p {
+          color: #333;
+          font-size: 1.1rem;
+          line-height: 1.6;
+        }
+        #nossa-historia {
+  scroll-margin-top: 100px; 
+}
+
+        @media (max-width: 768px) {
+    .hero {
+        background-size: cover; 
+        background-position: center; 
+        height: 80vh; 
+        padding: 1rem;
+    }
+}
+      </style>
+    </head>
+    <body>
+
+        <header id="header">
+          <div class="navbar">
+            <div class="logo"><a href="../index.html"><img src="../Img_apps/logo2.png" alt="Logo" class="logo-img-logo"></a></div>
+            <ul class="links">
+              <li><a href="../index.html">PLANOS</a></li>
+              <li><a href="#">SOBRE</a></li>
+              <li><a href="../index.html">NOVIDADES</a></li>
+              <li><a href="../index.html">CONTATOS</a></li>
+            </ul>
+            <a href="https://sp.connectlinksp.com.br/central_assinante_web/login" class="action_btn">AREA DO CLIENTE</a>
+            <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+    
+        <div class="dropdown_menu">
+              <li><a href="../index.html">PLANOS</a></li>
+              <li><a href="#">SOBRE</a></li>
+              <li><a href="../index.html">NOVIDADES</a></li>
+              <li><a href="../index.html">CONTATOS</a></li>
+          <li><a href="https://sp.connectlinksp.com.br/central_assinante_web/login" class="action_btn">AREA DO CLIENTE</a></li>
+        </div>
+        </header>
+    
+      <div class="hero">
+
+      </div>
+    
+      <div class="content" id="nossa-historia">
+        <div class="section">
+          <h2>Nossa história</h2>
+          <p>
+            A Connect link surgiu através da necessidade da implantação de um serviço de internet para regiões que, até então, não eram atendidas por nenhuma operadora grande. Nesse momento, enxergamos a carência da região, e logo iniciamos as instalações para suprir a necessidade da região.
+          </p>
+          <p>
+            Somos profissionais de confiança e com ótima experiência. Ouvimos os nossos clientes e trabalhamos com eles para suprir as suas necessidades através de soluções inovadoras e tecnológicas. Cuidamos dos nossos clientes de forma personalizada, com toda seriedade e comprometimento.
+          </p>
+        </div>
+    
+        <div class="section">
+          <h2>Missão</h2>
+          <p>
+            Estar na vanguarda das novas tecnologias relacionadas à internet, provendo acesso com velocidade, estabilidade, disponibilidade e segurança, tornando o uso da internet uma solução para nossos clientes.
+          </p>
+        </div>
+    
+        <div class="section">
+          <h2>Visão</h2>
+          <p>
+            Buscar o reconhecimento da empresa pela qualidade dos serviços prestados, pautando o relacionamento com clientes, parceiros e colaboradores.
+          </p>
+        </div>
+    
+        <div class="section">
+          <h2>Valores</h2>
+          <p>
+            Ética, integridade e transparência, trabalhando sempre para oferecer um serviço e atendimento de qualidade para nossos clientes.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+              <div class="logo"><a href="index.html"><img src="../Img_apps/logo2.png" alt="Logo" class="logo-img-logo"></a></div>
+                <p>Conectando Vidas.</p>
+    
+                <div id="footer_social_media">
+                  <a href="https://www.instagram.com/connectlinktechsp/#" class="footer-link" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+  
+                  <a href="#" class="footer-link" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+  
+                  <a href="https://api.whatsapp.com/send/?phone=5511914833144&text=Como+posso+ajudar%3F&type=phone_number&app_absent=0" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+              </div>
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h3>Midia</h3>
+              </li>
+              <li>
+                  <a href="https://www.instagram.com/connectlinktechsp/#" class="footer-link">Instagram</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">E-mail</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Tik Tok</a>
+              </li>
+          </ul>
+  
+          <ul class="footer-list">
+              <li>
+                  <h3>Produtos</h3>
+              </li>
+              <li>
+                  <a href="#conteudo" class="footer-link">Planos</a>
+              </li>
+              <li>
+                  <a href="#news" class="footer-link">Novidades</a>
+              </li>
+              <li>
+                  <a href="#contato" class="footer-link">Contatos</a>
+              </li>
+          </ul>
+    
+            <div id="footer_subscribe">
+                <h3>Politica de privacidade</h3>
+    
+                <p>
+                  <div class="logo"><a href="#"><img src="../Img_apps/anatel.png" alt="Logo" class="logo-img-logo"></a></div>
+                </p>
+    
+                
+                </div>
+            </div>
+        </div>
+    
+        <div id="footer_copyright">
+            &#169
+            2025 todos os direitos reservados.
+        </div>
+    </footer>
+
+<script src="sobre.js"></script>
+<script src="../js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    </body>
+    </html>
+    

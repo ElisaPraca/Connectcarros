@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+
+
+
+:root{
+    --container-color: #1a1e21;
+    --second-color: #e55b11;
+    --text-color: #172317;
+    --bg-color: #fff;
+}
+
+::selection{
+    color: var(--bg-color);
+    background: var(--second-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+.container22{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+.post-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+    margin-bottom: 20px;
+}
+
+.filter-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.active-filter{
+    background: var(--second-color);
+    color: var(--bg-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.post-box{
+    background: var(--bg-color);
+    box-shadow: 0 4px 14px hsl(35deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: 0.5rem;
+}
+
+.post-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.post-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-date{
+    display: flex;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+.post-description{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
+}
+
+.profile-name{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.container22 {
+    width: 100%;
+    max-width: 1068px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+
+
+@media (max-width: 1060px) {
+    .container22 {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 1060px){
+    .container{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .home-text{
+        width: 100%
+    }
+}
+
+@media (max-width: 768px){
+    .nav{
+        padding: 10px 0;
+    }
+
+    section{
+        padding: 2rem 0 !important;
+    }
+
+    .header-content{
+        margin-top: 3rem !important;
+    }
+
+    .home{
+        min-height: 380px;
+    }
+
+    .home-title{
+        font-size: 3rem;
+    }
+
+    .header-title{
+        font-size: 2rem;
+    }
+
+    .header-img{
+        height: 370px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about .contentBx{
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .about .contentBx,
+    .about .imgBx{
+        min-width: 100%;
+        width: 100%;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .about .imgBx{
+        min-height: 250px;
+    }
+
+    .btn2{
+        margin-bottom: 30px;
+    }
+
+    .post-header{
+        height: 435px;
+    }
+
+    .post-header{
+        margin-top: 9rem !important;
+    }
+}
+
+@media (max-width: 570px){
+    .post-header{
+        height: 390px;
+    }
+
+    .header-title{
+        width: 100%;
+    }
+
+    .header-img{
+        height: 340px;
+    }
+}
+
+@media (max-width: 396px){
+    .home-title{
+        font-size: 2rem;
+    }
+
+    .home-subtitle{
+        font-size: 0.9rem;
+    }
+
+    .home{
+        min-height: 300px;
+    }
+
+    .post-box{
+        padding: 10px;
+    }
+
+    .header-title{
+        font-size: 1.4rem;
+    }
+
+    .header-img{
+        height: 240px;
+    }
+
+    .post-header{
+        height: 335px;
+    }
+
+    .header-img{
+        height: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .post {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding: 1rem 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .post-box {
+        flex: 0 0 calc(100% / 1.5); 
+        scroll-snap-align: start;
+        min-width: 220px;
+        max-width: 260px;
+    }
+
+   
+}
+
+@media (max-width: 768px) {
+    .scroll-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 1rem 0;
+    }
+
+    .post {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.post-box {
+    flex: 0 0 260px;
+    scroll-snap-align: center; 
+}
+
+    .scroll-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+
+
+
+
+.post-description {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.post-description.expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+.read-more {
+    color: var(--second-color);
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #a9430c;
+}
+
+
+.post.container22 {
+  opacity: 0;
+  transform: translateX(-50px); 
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.post.container22.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+    </style>
+
+    <div class="post-filter container22">
+        <span class="filter-item active-filter" data-filter="news">Notícias</span>
+        <!--   <span class="filter-item " data-filter="tech">Novidades</span>-->
+        
+
+    </div>
+    
+
+    
+    <div class="post-scroll-wrapper">
+        <div class="post">
+    <div class="post container22">
+
+        
+        <!-- Post 1 
+        <div class="post-box tech">
+            <img src="../Imagens_news/chip.png" alt="" class="post-img">
+            <h2 class="category">Novidade</h2>
+            <a href="#" class="post-title">Chip Connect Link</a>
+            <span class="post-date">12 Mar 2025</span>
+            <p class="post-description">A Connect Link oferecerá um chip de celular, trazendo mais comodidade e conectividade para nossos clientes. Fique atento, pois logo você poderá contar com mais uma solução para facilitar seu dia a dia!</p>
+            <span class="read-more">Ver mais...</span>
+            <div class="profile">
+                <span class="profile-name">Em Breve</span>
+            </div>
+        </div>-->
+        <!-- Post 2 
+        <div class="post-box tech">
+            <img src="../Imagens_news/appsestreaming.jpg" alt="" class="post-img">
+            <h2 class="category">Novidade</h2>
+            <a href="#" class="post-title">Apps e Streaming</a>
+            <span class="post-date">12 Mar 2025</span>
+            <p class="post-description">Agora na Connect, você pode aproveitar os novos serviços de streaming, como o Disney+ e muitos outros, tudo com a conveniência de escolher os aplicativos que deseja, à la carte! Oferecemos a flexibilidade de adquirir os melhores conteúdos do mercado conforme suas preferências, trazendo uma experiência personalizada de entretenimento.</p>
+            <span class="read-more">Ver mais...</span>
+            <div class="profile">
+                <span class="profile-name">Ativo</span>
+            </div>
+        </div>-->
+        <!-- Post 4 -->
+        <div class="post-box news">
+            <img src="../Imagens_news/gazinho.png" alt="" class="post-img">
+            <h2 class="category">Noticias</h2>
+            <a href="#" class="post-title">Barbearia do Gazinho</a>
+            <span class="post-date">12 mar 2025</span>
+            <p class="post-description">A Connect tem o prazer de anunciar sua parceria com a Barbearia do Gazinho! Se você está em busca de um corte de cabelo ou barba impecável, não deixe de visitar esse espaço incrível. Profissionais qualificados, ambiente aconchegante e um atendimento de primeira. Passe lá e experimente!</p>
+            <span class="read-more">Ver mais...</span>
+            <div class="profile">
+                <span class="profile-name">Rua Prof. Orestes Rosolia. 205</span>
+            </div>
+        </div>
+        <!-- Post 5 
+        <div class="post-box tech">
+            <img src="../Imagens_news/clubedevantagens.png" alt="" class="post-img">
+            <h2 class="category">Novidade</h2>
+            <a href="#" class="post-title">Clube de Vantagens</a>
+            <span class="post-date">12 Mar 2025</span>
+            <p class="post-description">Com o nosso app, você tem acesso ao Clube de Vantagens Connect, repleto de descontos exclusivos em diversos serviços e produtos! Aproveite essa oportunidade e desfrute de benefícios incríveis, tudo ao seu alcance. Não fique de fora, baixe o app e comece a economizar agora mesmo! acesse já: <a href="https://www.clubesims.com.br/login.asp" target="_blank" rel="noopener noreferrer">
+                Clube de Vantagens
+              </a> </p>
+            <span class="read-more">Ver mais...</span>
+            <div class="profile">
+                <span class="profile-name">Ativo</span>
+            </div>
+        </div>-->
+        <!-- Post 6 -->
+        <div class="post-box news">
+            <img src="../Imagens_news/tattoo.jpg" alt="" class="post-img">
+            <h2 class="category">Noticias</h2>
+            <a href="#" class="post-title">Rogério torres tattoo</a>
+            <span class="post-date">12 Maio 2025</span>
+            <p class="post-description">A Connect Link fechou com o mestre das agulhas: Rogério Torres Tattoo!
+                Se você é cliente Connect, Quer eternizar algo com traço fino, realismo ou aquela tattoo que é simplesmente ARTE? Só chegar no Rogério e dizer que é da família Connect!</p>
+            <span class="read-more">Ver mais...</span>
+            <div class="profile">
+                <span class="profile-name">Av. Carlos Lacerda, 1547</span>
+            </div>
+        </div>
+        <!-- Post 7 -->
+        <div class="post-box news">
+            <img src="../Imagens_news/duda.png" alt="" class="post-img">
+            <h2 class="category">Noticias</h2>
+            <a href="#" class="post-title">Duda cabeleireira</a>
+            <span class="post-date">12 Maio 2025</span>
+            <p class="post-description">A Connect Link se juntou com a poderosa Duda Cabeleireira pra deixar você ON não só na internet, mas também no visu! Agora, quem é cliente Connect tem DESCONTO EXCLUSIVO nos serviços da Duda. Isso mesmo! Internet rápida + aquele trato no cabelo</p>
+            <span class="read-more">Ver mais...</span>
+            <div class="profile">
+                <span class="profile-name">Av. Carlos Lacerda, 1554</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

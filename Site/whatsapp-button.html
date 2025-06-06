@@ -1,0 +1,69 @@
+<div style="position: fixed; bottom: 15px; right: 20px; z-index: 9999;">
+
+<!-- Botão do Instagram -->
+    <div style="position: fixed; bottom: 75px; right: 20px;">
+<a href="https://www.instagram.com/connectlinktechsp" target="_blank"
+    style="
+        display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            width: 50px; 
+            height: 50px; 
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
+            border-radius: 50%; 
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;"
+        onmouseover="this.style.transform='scale(1.15)'; this.style.filter='brightness(1.2)';"
+        onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';">
+        
+        <svg width="25" height="25" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.75 2C4.14 2 2 4.14 2 7.75v8.5C2 19.86 4.14 22 7.75 22h8.5C19.86 22 22 19.86 22 16.25v-8.5C22 4.14 19.86 2 16.25 2h-8.5zM7.75 3.5h8.5c2.55 0 4.25 1.7 4.25 4.25v8.5c0 2.55-1.7 4.25-4.25 4.25h-8.5C5.2 20.5 3.5 18.8 3.5 16.25v-8.5C3.5 5.2 5.2 3.5 7.75 3.5zM17.5 5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM12 6.75A5.25 5.25 0 006.75 12 5.25 5.25 0 0012 17.25 5.25 5.25 0 0017.25 12 5.25 5.25 0 0012 6.75zm0 1.5A3.75 3.75 0 0115.75 12 3.75 3.75 0 0112 15.75 3.75 3.75 0 018.25 12 3.75 3.75 0 0112 8.25z"/>
+        </svg>
+    </a>
+</div>
+
+<!-- Botão do WhatsApp -->
+<a href="https://wa.me/5511914833144?text=Ola%20vim%20Pelo%20site" target="_blank" 
+    style="
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 50px; 
+        height: 50px; 
+        background-color: #25D366; 
+        border-radius: 50%; 
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;"
+    onmouseover="this.style.transform='scale(1.15)'; this.style.boxShadow='0 5px 8px rgba(0, 0, 0, 0.2)';" 
+    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 5px rgba(0, 0, 0, 0.2)';">
+    
+    <svg enable-background="new 0 0 512 512" width="25" height="25" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+        <path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/>
+        <path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/>
+    </svg>
+</a>
+</div>
+
+<script>
+   // Exibe o balão automaticamente ao carregar a página
+window.onload = function() {
+    var balloon = document.createElement('div');
+    balloon.innerHTML = "Está com dúvida? Nos chame aqui!";
+    balloon.style.cssText = `
+        position: fixed;
+        bottom: 75px;
+        right: 80px;
+        background: white;
+        color: #333;
+        padding: 8px 12px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        display: none;
+    `;
+    document.body.appendChild(balloon);
+    balloon.style.display = 'block';
+    setTimeout(() => balloon.style.display = 'none', 5000);
+};
+</script>

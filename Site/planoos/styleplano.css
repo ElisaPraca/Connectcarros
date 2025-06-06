@@ -1,0 +1,341 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #0000;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0000;
+}
+
+::-webkit-scrollbar-track {
+  background: #0000;
+}
+
+.container3 {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.section-subheading {
+  color: #000000;
+  font-size: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: #000000;
+  padding: 2rem 0;
+}
+
+
+
+#tranding {
+  padding: 4rem 0;
+}
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
+#tranding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#tranding .tranding-slider {
+  height: 40rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 32rem;
+  }
+}
+
+.tranding-slide {
+  width: 27rem;
+  height: 32rem;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 400PX;
+  height: 400PX;
+  border-radius: 50px !important;
+  object-fit: contain;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #000000;
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: relative;
+  bottom: 2rem;
+  left: 2rem;
+  color: #000000;
+}
+
+
+
+.food-rating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rating ion-icon {
+  color: #000000;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.tranding-slider-control .slider-arrow {
+  background: #0000;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: #0000;
+}
+
+
+@media (max-width: 450px) {
+  
+  #tranding .tranding-slider {
+    height: 25rem;
+  }
+
+ 
+  .tranding-slide .tranding-slide-img img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+
+  .tranding-slide {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+
+  .tranding-slider-control .swiper-button-next,
+  .tranding-slider-control .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+
+    margin-top: 1rem;  
+  }
+
+  .tranding-slider-control .slider-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    margin-top: 1rem;
+  }
+}
+
+
+.tranding-slide-content-bottom1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.botao-imagem {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.botao-imagem:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+  #tranding {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #tranding {
+    display: none;
+  }
+}
+
+
+.container10 {
+  display: grid;
+  gap: 10px;
+  max-width: 800px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto; /* centraliza o container na tela */
+}
+
+.card10-wrapper {
+  position: relative; /* para permitir que o botão seja posicionado abaixo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card10 {
+  background-color: #0000;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  width: 100%;
+}
+
+.card10 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  /* Removemos o border-radius aqui para evitar conflito */
+}
+
+/* Botão fora do card, mas ainda dentro do wrapper */
+.button-container {
+  margin-top: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container a img {
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+  .card10 {
+      display: block;
+  }
+}
+
+
+@media (min-width: 601px) {
+  .container10 {
+      display: none;
+  }
+}
